@@ -5,15 +5,16 @@ body {
 
 header,
 nav {
-    padding: 5px 5px 5px 3px;
-    margin: 3px;
+    padding: 5px 15px 5px 15px;
+    margin: 20px;
 
 }
 
 nav ul li {
     /* Set display, margin, padding, font-size, background-color */
     display: inline-block;
-    padding: 5px 5px 5px 3px;
+    margin: 20px;
+    padding: 5px;
     font-size: 30px;
     background-color: #86A3B8;
 }
@@ -24,14 +25,14 @@ nav a {
 
 a:visited {
     color: #000000;
-
 }
 
 nav a.current {
     /* Set text decoration, transformation, and underline properties */
-    text-transform: uppercase;
     text-decoration-style: wavy !important;
     text-underline-position: under !important;
+    /* text-decoration-color: #000000; */
+    text-transform: uppercase;
 }
 
 
@@ -58,29 +59,40 @@ h1,
 h2,
 h3 {
     /*Set margin */
-    margin: 3px;
+    margin: 10px;
 
 }
 
 .grid {
     /*Set width, margin, border properties, background color, and grid properties */
-    width: 90%;
-    border-radius: 3px;
     display: grid;
+    /* grid-template-columns: 90%; */
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    background-color: #86A3B8;
 }
 
 .grid div {
     /* Set border properties, padding, and background color */
-
+    /* background-color: #86A3B8; */
+    padding: 5px;
+    border-radius: 25px;
+    border: 3px solid #000000;
 }
 
 .grid img {
     /* Set width, margin, and display */
+    justify-content: center;
+    display: inline-block;
+    margin: 10px;
 }
 
 
 .grid div:nth-child(3n+1) {
     /* Set box shadow */
+    box-shadow: 0px 2px 0px 0px;
 }
 
 .grid div:nth-child(3n) {
@@ -99,14 +111,14 @@ p+p {
 
 p {
     /* Set margin */
-    margin: 5px;
+    margin: 10px;
 }
 
 
 .grid ul li {
     /* Set margin, line-spacing, list styling  */
     line-height: 1;
-    list-style-image: url("images/sketchbook.png");
+    list-style-image: url("../images/sketchbook.png");
     margin-bottom: 10px;
     margin-left: 10px;
 }
